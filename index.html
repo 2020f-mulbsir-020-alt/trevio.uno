@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Trevio — A cinematic travel-memory simulation system where journeys are recorded, re-lived, and re-imagined as emotional data.">
+  <meta name="keywords" content="travel memories, cinematic journeys, memory reconstruction, Trevio">
+  <meta name="author" content="Trevio">
+  <meta property="og:title" content="Trevio — Every Journey Leaves A Trace">
+  <meta property="og:description" content="Step inside a machine that replays human journeys as living experiences.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://trevio.uno">
+  <meta name="theme-color" content="#0B1F3B">
+  <title>Trevio — Travel Memory Reconstruction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Manrope:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Skip link for accessibility -->
+  <a href="#main-content" class="skip-link">Skip to memory system</a>
+
+  <!-- SECTION 1: THE MEMORY SCAN -->
+  <section id="memory-scan" class="section section--scan" aria-label="Memory Scan">
+    <div class="scan-screen" role="presentation">
+      <div class="scan-particles" aria-hidden="true"></div>
+      <div class="scan-waves" aria-hidden="true">
+        <svg class="wave-svg" viewBox="0 0 800 120" preserveAspectRatio="none">
+          <path class="wave-path" d="M0,60 Q100,20 200,60 T400,60 T600,60 T800,60" fill="none" stroke="currentColor" stroke-width="1.5"/>
+          <path class="wave-path wave-path--2" d="M0,70 Q100,40 200,70 T400,70 T600,70 T800,70" fill="none" stroke="currentColor" stroke-width="1"/>
+        </svg>
+      </div>
+      <div class="scan-fragments" aria-hidden="true">
+        <span class="fragment" data-fragment="kyoto">KYOTO · 04:17</span>
+        <span class="fragment" data-fragment="sahara">SAHARA · 18:42</span>
+        <span class="fragment" data-fragment="paris">PARIS · 22:03</span>
+        <span class="fragment" data-fragment="patagonia">PATAGONIA · 06:55</span>
+      </div>
+      <div class="scan-beam" aria-hidden="true"></div>
+      <div class="logo-reconstruct" aria-hidden="true">
+        <h1 class="logo-text">
+          <span class="logo-line" style="--i:0">T</span>
+          <span class="logo-line" style="--i:1">R</span>
+          <span class="logo-line" style="--i:2">E</span>
+          <span class="logo-line" style="--i:3">V</span>
+          <span class="logo-line" style="--i:4">I</span>
+          <span class="logo-line" style="--i:5">O</span>
+        </h1>
+        <p class="logo-tagline">memory reconstruction system</p>
+      </div>
+      <div class="scan-grid-overlay" aria-hidden="true"></div>
+    </div>
+    <div class="scan-enter-prompt">
+      <button class="scan-enter-btn" id="enter-system" aria-label="Enter the memory system">
+        <span class="scan-enter-line"></span>
+        Enter Memory System
+      </button>
+    </div>
+  </section>
+
+  <main id="main-content">
+
+    <!-- SECTION 2: JOURNEY RECONSTRUCTION GRID -->
+    <section id="memories" class="section section--grid" aria-labelledby="grid-heading">
+      <header class="section-header">
+        <span class="section-index">02</span>
+        <h2 id="grid-heading" class="section-title">Journey Reconstruction</h2>
+        <p class="section-subtitle">Incomplete frames await completion</p>
+      </header>
+      <div class="reconstruction-grid" role="list">
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Kyoto, Japan" data-time="04:17:33">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 200">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:40%"></span>
+                <span class="sound-bar" style="--h:70%"></span>
+                <span class="sound-bar" style="--h:55%"></span>
+                <span class="sound-bar" style="--h:85%"></span>
+                <span class="sound-bar" style="--h:30%"></span>
+                <span class="sound-bar" style="--h:60%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2024-03-15T04:17:33">04:17:33</time>
+              <span class="frame-location">Kyoto · Temple District</span>
+            </div>
+          </div>
+        </article>
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Sahara, Morocco" data-time="18:42:08">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 30">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:60%"></span>
+                <span class="sound-bar" style="--h:45%"></span>
+                <span class="sound-bar" style="--h:90%"></span>
+                <span class="sound-bar" style="--h:35%"></span>
+                <span class="sound-bar" style="--h:75%"></span>
+                <span class="sound-bar" style="--h:50%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2023-11-02T18:42:08">18:42:08</time>
+              <span class="frame-location">Sahara · Dune Ridge</span>
+            </div>
+          </div>
+        </article>
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Paris, France" data-time="22:03:51">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 260">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:55%"></span>
+                <span class="sound-bar" style="--h:80%"></span>
+                <span class="sound-bar" style="--h:40%"></span>
+                <span class="sound-bar" style="--h:65%"></span>
+                <span class="sound-bar" style="--h:90%"></span>
+                <span class="sound-bar" style="--h:45%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2024-01-20T22:03:51">22:03:51</time>
+              <span class="frame-location">Paris · Seine Embankment</span>
+            </div>
+          </div>
+        </article>
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Istanbul, Turkey" data-time="14:28:17">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 15">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:70%"></span>
+                <span class="sound-bar" style="--h:50%"></span>
+                <span class="sound-bar" style="--h:85%"></span>
+                <span class="sound-bar" style="--h:60%"></span>
+                <span class="sound-bar" style="--h:40%"></span>
+                <span class="sound-bar" style="--h:75%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2023-09-08T14:28:17">14:28:17</time>
+              <span class="frame-location">Istanbul · Grand Bazaar</span>
+            </div>
+          </div>
+        </article>
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Patagonia, Chile" data-time="06:55:02">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 180">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:35%"></span>
+                <span class="sound-bar" style="--h:65%"></span>
+                <span class="sound-bar" style="--h:80%"></span>
+                <span class="sound-bar" style="--h:45%"></span>
+                <span class="sound-bar" style="--h:70%"></span>
+                <span class="sound-bar" style="--h:55%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2024-02-11T06:55:02">06:55:02</time>
+              <span class="frame-location">Patagonia · Glacier Valley</span>
+            </div>
+          </div>
+        </article>
+        <article class="memory-frame" role="listitem" tabindex="0" data-location="Reykjavik, Iceland" data-time="23:11:44">
+          <div class="frame-incomplete">
+            <div class="frame-corner frame-corner--tl"></div>
+            <div class="frame-corner frame-corner--br"></div>
+            <div class="frame-scanline"></div>
+          </div>
+          <div class="frame-complete">
+            <div class="frame-visual" style="--hue: 220">
+              <div class="frame-landscape"></div>
+              <div class="frame-soundscape">
+                <span class="sound-bar" style="--h:50%"></span>
+                <span class="sound-bar" style="--h:75%"></span>
+                <span class="sound-bar" style="--h:60%"></span>
+                <span class="sound-bar" style="--h:90%"></span>
+                <span class="sound-bar" style="--h:35%"></span>
+                <span class="sound-bar" style="--h:65%"></span>
+              </div>
+            </div>
+            <div class="frame-meta">
+              <time datetime="2023-12-21T23:11:44">23:11:44</time>
+              <span class="frame-location">Reykjavik · Aurora Field</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SECTION 3: THE TIME RIVER -->
+    <section id="time-river" class="section section--river" aria-labelledby="river-heading">
+      <header class="section-header section-header--dark">
+        <span class="section-index">03</span>
+        <h2 id="river-heading" class="section-title">The Time River</h2>
+        <p class="section-subtitle">Scroll to travel through time</p>
+      </header>
+      <div class="river-container">
+        <div class="river-flow" aria-hidden="true">
+          <div class="river-light"></div>
+          <div class="river-particles"></div>
+        </div>
+        <div class="river-memories" role="list">
+          <div class="river-event" role="listitem" data-year="2019">
+            <span class="river-year">2019</span>
+            <p class="river-moment">First departure — Lisbon at dawn</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2020">
+            <span class="river-year">2020</span>
+            <p class="river-moment">Silent crossings — empty terminals</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2021">
+            <span class="river-year">2021</span>
+            <p class="river-moment">Return to movement — coastal roads</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2022">
+            <span class="river-year">2022</span>
+            <p class="river-moment">Desert nights — stars as navigation</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2023">
+            <span class="river-year">2023</span>
+            <p class="river-moment">Temple silence — morning rituals</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2024">
+            <span class="river-year">2024</span>
+            <p class="river-moment">Glacier echoes — ice becoming water</p>
+          </div>
+          <div class="river-event" role="listitem" data-year="2025">
+            <span class="river-year">2025</span>
+            <p class="river-moment">Memory convergence — all paths merge</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: DESTINATION ECHOES -->
+    <section id="echoes" class="section section--echoes" aria-labelledby="echoes-heading">
+      <header class="section-header">
+        <span class="section-index">04</span>
+        <h2 id="echoes-heading" class="section-title">Destination Echoes</h2>
+        <p class="section-subtitle">Each place resonates with layered memory</p>
+      </header>
+      <div class="echo-chamber" role="list">
+        <button class="echo" role="listitem" data-echo="kyoto" aria-expanded="false" aria-controls="echo-kyoto-layers">
+          <span class="echo-ring echo-ring--1"></span>
+          <span class="echo-ring echo-ring--2"></span>
+          <span class="echo-ring echo-ring--3"></span>
+          <span class="echo-name">Kyoto Echo</span>
+          <span class="echo-frequency">2.4kHz resonance</span>
+        </button>
+        <div id="echo-kyoto-layers" class="echo-layers" hidden>
+          <div class="echo-layer" style="--depth:1">Temple bells at first light</div>
+          <div class="echo-layer" style="--depth:2">Bamboo grove — wind patterns</div>
+          <div class="echo-layer" style="--depth:3">Tea ceremony — stillness</div>
+        </div>
+
+        <button class="echo" role="listitem" data-echo="sahara" aria-expanded="false" aria-controls="echo-sahara-layers">
+          <span class="echo-ring echo-ring--1"></span>
+          <span class="echo-ring echo-ring--2"></span>
+          <span class="echo-ring echo-ring--3"></span>
+          <span class="echo-name">Sahara Echo</span>
+          <span class="echo-frequency">0.8kHz resonance</span>
+        </button>
+        <div id="echo-sahara-layers" class="echo-layers" hidden>
+          <div class="echo-layer" style="--depth:1">Dune crest at golden hour</div>
+          <div class="echo-layer" style="--depth:2">Camel caravan — distant rhythm</div>
+          <div class="echo-layer" style="--depth:3">Night sky — infinite silence</div>
+        </div>
+
+        <button class="echo" role="listitem" data-echo="paris" aria-expanded="false" aria-controls="echo-paris-layers">
+          <span class="echo-ring echo-ring--1"></span>
+          <span class="echo-ring echo-ring--2"></span>
+          <span class="echo-ring echo-ring--3"></span>
+          <span class="echo-name">Paris Echo</span>
+          <span class="echo-frequency">3.1kHz resonance</span>
+        </button>
+        <div id="echo-paris-layers" class="echo-layers" hidden>
+          <div class="echo-layer" style="--depth:1">Rain on cobblestones</div>
+          <div class="echo-layer" style="--depth:2">Café conversations — fragments</div>
+          <div class="echo-layer" style="--depth:3">Seine reflection at midnight</div>
+        </div>
+
+        <button class="echo" role="listitem" data-echo="istanbul" aria-expanded="false" aria-controls="echo-istanbul-layers">
+          <span class="echo-ring echo-ring--1"></span>
+          <span class="echo-ring echo-ring--2"></span>
+          <span class="echo-ring echo-ring--3"></span>
+          <span class="echo-name">Istanbul Echo</span>
+          <span class="echo-frequency">1.9kHz resonance</span>
+        </button>
+        <div id="echo-istanbul-layers" class="echo-layers" hidden>
+          <div class="echo-layer" style="--depth:1">Call to prayer — layered voices</div>
+          <div class="echo-layer" style="--depth:2">Spice market — color saturation</div>
+          <div class="echo-layer" style="--depth:3">Bosphorus crossing — two continents</div>
+        </div>
+
+        <button class="echo" role="listitem" data-echo="patagonia" aria-expanded="false" aria-controls="echo-patagonia-layers">
+          <span class="echo-ring echo-ring--1"></span>
+          <span class="echo-ring echo-ring--2"></span>
+          <span class="echo-ring echo-ring--3"></span>
+          <span class="echo-name">Patagonia Echo</span>
+          <span class="echo-frequency">0.5kHz resonance</span>
+        </button>
+        <div id="echo-patagonia-layers" class="echo-layers" hidden>
+          <div class="echo-layer" style="--depth:1">Wind across ice fields</div>
+          <div class="echo-layer" style="--depth:2">Condor flight — high altitude</div>
+          <div class="echo-layer" style="--depth:3">Solitude — vast horizon</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: CINEMATIC ARCHIVE WALL -->
+    <section id="archive" class="section section--archive" aria-labelledby="archive-heading">
+      <header class="section-header section-header--dark">
+        <span class="section-index">05</span>
+        <h2 id="archive-heading" class="section-title">Cinematic Archive Wall</h2>
+        <p class="section-subtitle">A library of preserved moments</p>
+      </header>
+      <div class="archive-wall" role="list" aria-label="Film strip archive">
+        <div class="film-strip" role="listitem" style="--strip-hue:200">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Temple Light</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:30">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Desert Wind</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:260">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Urban Rain</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:180">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Ice &amp; Stone</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:15">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Market Pulse</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:220">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Northern Light</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:340">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Coastal Dawn</span>
+        </div>
+        <div class="film-strip" role="listitem" style="--strip-hue:120">
+          <div class="strip-perforations"></div>
+          <div class="strip-frames">
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+            <div class="strip-frame"></div>
+          </div>
+          <span class="strip-label">Forest Depth</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: SOUND OF JOURNEYS -->
+    <section id="soundscape" class="section section--sound" aria-labelledby="sound-heading">
+      <header class="section-header">
+        <span class="section-index">06</span>
+        <h2 id="sound-heading" class="section-title">The Sound of Journeys</h2>
+        <p class="section-subtitle">Synesthetic memory patterns</p>
+      </header>
+      <div class="sound-space">
+        <canvas id="sound-canvas" aria-hidden="true"></canvas>
+        <div class="sound-labels">
+          <span class="sound-label" data-intensity="low">Whisper</span>
+          <span class="sound-label" data-intensity="mid">Resonance</span>
+          <span class="sound-label" data-intensity="high">Crescendo</span>
+        </div>
+        <div class="sound-memories">
+          <p class="sound-memory" data-scroll="0">Wind through bamboo — Kyoto</p>
+          <p class="sound-memory" data-scroll="0.33">Sand shifting — Sahara</p>
+          <p class="sound-memory" data-scroll="0.66">Rain on stone — Paris</p>
+          <p class="sound-memory" data-scroll="1">Ice cracking — Patagonia</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: LIGHT ROUTE MAP -->
+    <section id="routes" class="section section--routes" aria-labelledby="routes-heading">
+      <header class="section-header section-header--dark">
+        <span class="section-index">07</span>
+        <h2 id="routes-heading" class="section-title">The Light Route Map</h2>
+        <p class="section-subtitle">Journeys drawn in living light</p>
+      </header>
+      <div class="route-map-container">
+        <svg class="route-map" viewBox="0 0 1200 600" role="img" aria-label="Glowing travel route map">
+          <defs>
+            <filter id="glow">
+              <feGaussianBlur stdDeviation="4" result="blur"/>
+              <feMerge>
+                <feMergeNode in="blur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+            <linearGradient id="routeGrad1" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FF6A3D" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#FF6A3D"/>
+              <stop offset="100%" stop-color="#FFC857"/>
+            </linearGradient>
+            <linearGradient id="routeGrad2" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#FFC857" stop-opacity="0"/>
+              <stop offset="50%" stop-color="#FFC857"/>
+              <stop offset="100%" stop-color="#FF6A3D"/>
+            </linearGradient>
+          </defs>
+          <rect class="map-bg" width="1200" height="600" fill="#0B1F3B"/>
+          <g class="map-grid" opacity="0.15">
+            <line x1="0" y1="150" x2="1200" y2="150" stroke="#FFC857" stroke-width="0.5"/>
+            <line x1="0" y1="300" x2="1200" y2="300" stroke="#FFC857" stroke-width="0.5"/>
+            <line x1="0" y1="450" x2="1200" y2="450" stroke="#FFC857" stroke-width="0.5"/>
+            <line x1="300" y1="0" x2="300" y2="600" stroke="#FFC857" stroke-width="0.5"/>
+            <line x1="600" y1="0" x2="600" y2="600" stroke="#FFC857" stroke-width="0.5"/>
+            <line x1="900" y1="0" x2="900" y2="600" stroke="#FFC857" stroke-width="0.5"/>
+          </g>
+          <path class="route-path" data-route="1" d="M100,400 Q300,200 500,350 T900,250 L1100,180" fill="none" stroke="url(#routeGrad1)" stroke-width="2" filter="url(#glow)"/>
+          <path class="route-path" data-route="2" d="M150,500 Q400,300 600,400 T1000,300" fill="none" stroke="url(#routeGrad2)" stroke-width="2" filter="url(#glow)"/>
+          <path class="route-path" data-route="3" d="M200,200 Q500,450 700,200 T1100,400" fill="none" stroke="#FF6A3D" stroke-width="1.5" filter="url(#glow)" opacity="0.7"/>
+          <g class="route-nodes">
+            <circle class="route-node" cx="100" cy="400" r="6" data-node="origin"/>
+            <circle class="route-node" cx="500" cy="350" r="8" data-node="kyoto"/>
+            <circle class="route-node" cx="700" cy="200" r="8" data-node="sahara"/>
+            <circle class="route-node" cx="900" cy="250" r="8" data-node="paris"/>
+            <circle class="route-node" cx="1100" cy="180" r="6" data-node="destination"/>
+          </g>
+        </svg>
+        <div class="route-details">
+          <article class="route-card" data-route="1">
+            <h3 class="route-name">Eastern Pilgrimage</h3>
+            <dl class="route-meta">
+              <div><dt>Duration</dt><dd>14 days</dd></div>
+              <div><dt>Tone</dt><dd>Contemplative</dd></div>
+              <div><dt>Key Moment</dt><dd>Temple at first light</dd></div>
+            </dl>
+          </article>
+          <article class="route-card" data-route="2">
+            <h3 class="route-name">Desert Crossing</h3>
+            <dl class="route-meta">
+              <div><dt>Duration</dt><dd>7 days</dd></div>
+              <div><dt>Tone</dt><dd>Vast &amp; Silent</dd></div>
+              <div><dt>Key Moment</dt><dd>Dune crest at sunset</dd></div>
+            </dl>
+          </article>
+          <article class="route-card" data-route="3">
+            <h3 class="route-name">Northern Passage</h3>
+            <dl class="route-meta">
+              <div><dt>Duration</dt><dd>21 days</dd></div>
+              <div><dt>Tone</dt><dd>Raw &amp; Elemental</dd></div>
+              <div><dt>Key Moment</dt><dd>Glacier calving</dd></div>
+            </dl>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: MEMORY VAULT -->
+    <section id="vault" class="section section--vault" aria-labelledby="vault-heading">
+      <header class="section-header">
+        <span class="section-index">08</span>
+        <h2 id="vault-heading" class="section-title">The Memory Vault</h2>
+        <p class="section-subtitle">Sacred preserved experiences</p>
+      </header>
+      <div class="vault-container">
+        <div class="vault-door vault-door--left" aria-hidden="true"></div>
+        <div class="vault-door vault-door--right" aria-hidden="true"></div>
+        <div class="vault-glass-layers" aria-hidden="true">
+          <div class="glass-layer" style="--layer:1"></div>
+          <div class="glass-layer" style="--layer:2"></div>
+          <div class="glass-layer" style="--layer:3"></div>
+        </div>
+        <div class="vault-contents">
+          <article class="vault-memory">
+            <div class="vault-memory-glow"></div>
+            <h3 class="vault-memory-title">Kyoto · Dawn Ritual</h3>
+            <p class="vault-memory-desc">Incense smoke curling through ancient cedar. The sound of gravel underfoot. A memory held in amber light.</p>
+            <time class="vault-memory-date" datetime="2024-03-15">March 15, 2024</time>
+          </article>
+          <article class="vault-memory">
+            <div class="vault-memory-glow"></div>
+            <h3 class="vault-memory-title">Sahara · Star Navigation</h3>
+            <p class="vault-memory-desc">No artificial light for 200 kilometers. The Milky Way as compass. Sand still warm from the day.</p>
+            <time class="vault-memory-date" datetime="2023-11-02">November 2, 2023</time>
+          </article>
+          <article class="vault-memory">
+            <div class="vault-memory-glow"></div>
+            <h3 class="vault-memory-title">Patagonia · Ice Memory</h3>
+            <p class="vault-memory-desc">A glacier releasing a piece of itself into the sea. The sound lasted three seconds. It will outlast us.</p>
+            <time class="vault-memory-date" datetime="2024-02-11">February 11, 2024</time>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 9: REFLECTION ROOM -->
+    <section id="reflection" class="section section--reflection" aria-labelledby="reflection-heading">
+      <header class="section-header section-header--dark">
+        <span class="section-index">09</span>
+        <h2 id="reflection-heading" class="section-title">The Reflection Room</h2>
+        <p class="section-subtitle">Distorted journeys in still water</p>
+      </header>
+      <div class="reflection-room" id="reflection-room">
+        <div class="reflection-surface reflection-surface--1" data-tilt="0">
+          <div class="reflection-content">
+            <span class="reflection-place">Kyoto</span>
+            <span class="reflection-emotion">Stillness</span>
+          </div>
+        </div>
+        <div class="reflection-surface reflection-surface--2" data-tilt="0">
+          <div class="reflection-content">
+            <span class="reflection-place">Sahara</span>
+            <span class="reflection-emotion">Vastness</span>
+          </div>
+        </div>
+        <div class="reflection-surface reflection-surface--3" data-tilt="0">
+          <div class="reflection-content">
+            <span class="reflection-place">Paris</span>
+            <span class="reflection-emotion">Melancholy</span>
+          </div>
+        </div>
+        <div class="reflection-surface reflection-surface--4" data-tilt="0">
+          <div class="reflection-content">
+            <span class="reflection-place">Patagonia</span>
+            <span class="reflection-emotion">Awe</span>
+          </div>
+        </div>
+        <div class="reflection-pool" aria-hidden="true"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 10: FINAL REPLAY HORIZON -->
+    <section id="horizon" class="section section--horizon" aria-labelledby="horizon-heading">
+      <div class="horizon-sky" aria-hidden="true">
+        <div class="horizon-blend horizon-blend--1"></div>
+        <div class="horizon-blend horizon-blend--2"></div>
+        <div class="horizon-blend horizon-blend--3"></div>
+        <div class="horizon-particles"></div>
+      </div>
+      <div class="horizon-content">
+        <h2 id="horizon-heading" class="horizon-title">Every Journey Leaves A Trace</h2>
+        <button class="replay-control" id="replay-btn" aria-label="Replay experience — trigger memory reconstruction">
+          <span class="replay-ring replay-ring--outer"></span>
+          <span class="replay-ring replay-ring--inner"></span>
+          <span class="replay-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor">
+              <path d="M8 5v14l11-7z"/>
+            </svg>
+          </span>
+          <span class="replay-text">Replay Experience</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT (linked from nav) -->
+    <section id="contact" class="section section--contact" aria-labelledby="contact-heading">
+      <header class="section-header">
+        <span class="section-index">—</span>
+        <h2 id="contact-heading" class="section-title">Transmit Memory</h2>
+        <p class="section-subtitle">Share your journey traces with the system</p>
+      </header>
+      <form class="contact-form" action="#" method="post" novalidate>
+        <div class="form-field">
+          <label for="contact-name">Traveler Identity</label>
+          <input type="text" id="contact-name" name="name" autocomplete="name" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-email">Signal Frequency</label>
+          <input type="email" id="contact-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="form-field">
+          <label for="contact-memory">Memory Fragment</label>
+          <textarea id="contact-memory" name="memory" rows="4" placeholder="Describe a journey that changed you..."></textarea>
+        </div>
+        <button type="submit" class="contact-submit">Upload to Archive</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-text">TREVIO · Memory Reconstruction System · <span id="footer-year"></span></p>
+  </footer>
+
+  <!-- Floating Playback Dial Navigation -->
+  <nav class="playback-dial" id="playback-dial" aria-label="Memory system navigation">
+    <button class="dial-trigger" id="dial-trigger" aria-expanded="false" aria-controls="dial-menu" aria-label="Open navigation timeline">
+      <span class="dial-ring dial-ring--outer"></span>
+      <span class="dial-ring dial-ring--inner"></span>
+      <span class="dial-center">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
+          <circle cx="12" cy="12" r="3"/>
+          <path d="M12 2a10 10 0 0 1 10 10" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        </svg>
+      </span>
+    </button>
+    <div class="dial-menu" id="dial-menu" hidden>
+      <a href="#memories" class="dial-item" data-angle="0">Memories</a>
+      <a href="#echoes" class="dial-item" data-angle="60">Echoes</a>
+      <a href="#archive" class="dial-item" data-angle="120">Archive</a>
+      <a href="#routes" class="dial-item" data-angle="180">Routes</a>
+      <a href="#contact" class="dial-item" data-angle="240">Contact</a>
+      <a href="#time-river" class="dial-item" data-angle="300">Destinations</a>
+      <div class="dial-timeline" aria-hidden="true"></div>
+    </div>
+  </nav>
+
+  <script src="script.js"></script>
+</body>
+</html>
